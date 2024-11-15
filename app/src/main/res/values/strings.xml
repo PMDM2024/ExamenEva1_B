@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">ExamenEva1_B</string>
+
+    <string name="nombre_usuario">María García</string>
+    <string name="profesion">Programadora</string>
+
+    <array name="lenguajes">
+        <item>Kotlin</item>
+        <item>Java</item>
+        <item>Python</item>
+    </array>
+</resources>
