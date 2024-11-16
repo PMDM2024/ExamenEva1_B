@@ -13,12 +13,15 @@ import net.iessochoa.joseantoniolopez.examenaeva1.ui.screens.ejercicio1.Ejercici
 @Composable
 fun AppNavigation() {
     val navController = rememberNavController()
+
+    //descoméntalo para ver el navhost y diseñar la navegación
     /*NavHost(
         navController = navController,
         startDestination = ,
-
     )
     {
 
-    }//NavHost*/
+    }*/
+    //NavHost
+
 }

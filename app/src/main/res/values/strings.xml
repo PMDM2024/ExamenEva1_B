@@ -3,6 +3,7 @@
 
     <string name="nombre_usuario">María García</string>
     <string name="profesion">Programadora</string>
+    <string name="ninguno">Ninguno</string>
 
     <array name="lenguajes">
         <item>Kotlin</item>

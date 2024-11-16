@@ -9,15 +9,17 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.sp
+import net.iessochoa.pmdm.exameneva1_b.R
 import net.iessochoa.pmdm.exameneva1_b.ui.components.AppBar
 import net.iessochoa.pmdm.exameneva1_b.ui.theme.ExamenEva1_BTheme
 
 @Composable
 fun FavoritoScreen(
-    favorito: String="Ninguno",
+    favorito: String= stringResource(R.string.ninguno),
     onVolver: () -> Unit = {},
     modifier: Modifier = Modifier
 ) {

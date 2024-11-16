@@ -17,17 +17,15 @@ import androidx.compose.ui.unit.dp
 import net.iessochoa.pmdm.exameneva1_b.R
 import net.iessochoa.pmdm.exameneva1_b.ui.components.AppBar
 import net.iessochoa.pmdm.exameneva1_b.ui.components.DynamicSelectTextField
+import net.iessochoa.pmdm.exameneva1_b.ui.screens.ejercicio1.Ejercicio1ViewModel
 import net.iessochoa.pmdm.exameneva1_b.ui.theme.ExamenEva1_BTheme
+import androidx.lifecycle.viewmodel.compose.viewModel
 
 @Composable
 fun Ejercicio1Screen(
-
+    viewModel: Ejercicio1ViewModel = viewModel(),
     modifier: Modifier = Modifier
 ) {
-
-    val lenguajes= stringArrayResource(R.array.lenguajes)
-    var lenguajeSeleccionado by remember { mutableStateOf(lenguajes[0]) }
-
 
     Scaffold(
         topBar = {
@@ -40,7 +38,9 @@ fun Ejercicio1Screen(
             FloatingActionButton(
                 onClick ={
                 }
-            ) {}
+            ) {
+
+            }
         },
         modifier = modifier.fillMaxSize()
     ) { innerPadding ->
@@ -49,7 +49,7 @@ fun Ejercicio1Screen(
                 .fillMaxSize()
                 .padding(innerPadding)
                 .padding(start = 16.dp, end = 16.dp),
-        ) {
+        ) {//columna principal: Diseña la pantalla aquí
 
         }
     }
@@ -57,7 +57,8 @@ fun Ejercicio1Screen(
 }
 
 @Composable
-@Preview(showBackground = true)
+@Preview(showBackground = true,
+    showSystemUi = true)
 fun Ejercicio1Preview(){
     ExamenEva1_BTheme {
         Ejercicio1Screen()
